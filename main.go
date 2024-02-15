@@ -21,7 +21,7 @@ func (h *Header) Render() app.UI {
 				OnChange(h.ValueTo(&h.Address)),
 		).Style("width", "10em").Style("margin-right", "auto"),
 
-		// Net Version
+		// Node Version
 		app.H1().Body(
 			app.Text("Get Node Version"),
 		).Style("width", "10em").Style("margin-left", "auto").Style("margin-right", "auto"),
@@ -37,6 +37,7 @@ func (h *Header) Render() app.UI {
 					)).Style("overflow", "hidden").Style("height", "200px").Style("width", "300px"),
 			),
 		).Style("background-color", "deepskyblue").Style("display", "table").Style("clear", "both").Style("display", "block").Style("height", "200px"),
+
 		// Block Number
 		app.H1().Body(
 			app.Text("Last BlockNumber"),
@@ -54,7 +55,7 @@ func (h *Header) Render() app.UI {
 			),
 		).Style("background-color", "deepskyblue").Style("display", "table").Style("clear", "both").Style("display", "block").Style("height", "200px"),
 
-		// Transaction
+		// Node Name
 		app.H1().Body(
 			app.Text("Get Node Name"),
 		).Style("width", "10em").Style("margin-left", "auto").Style("margin-right", "auto"),
